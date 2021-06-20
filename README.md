@@ -175,8 +175,8 @@ The code for the method is here
 Dockerfile                        bucket-api.yaml                   python-flask-server-generated.zip stoplight-studio-mac.dmg          tox.ini
 README.md                         git_push.sh                       requirements.txt                  swagger_server
 api_tutorial                      python-client-generated.zip       setup.py                          test-requirements.txt
-❯ vi bucket-api.yaml
-❯```
+
+
  
 ```
 ❯ cd swagger_server
