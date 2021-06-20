@@ -49,7 +49,7 @@ docker run -p 8080:8080 swagger_server
 
 
 ```
-
+```
 1. Generate the API yaml 
 
 
@@ -141,8 +141,9 @@ Also ensure you run pip3 install 'connexion[swagger-ui] as the GUI will not star
 
 2.  generate the python flask server from the https://editor.swagger.io/ GUI  python-flask-server-generated.zip
    Unzip it and run python3 -m swagger_server from the directory above.
+   
 ```
-# python3 -m swagger_server
+python3 -m swagger_server
 ```
 ```
 The swagger_ui directory could not be found.
