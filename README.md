@@ -177,11 +177,13 @@ README.md                         git_push.sh                       requirements
 api_tutorial                      python-client-generated.zip       setup.py                          test-requirements.txt
 ❯ vi bucket-api.yaml
 ❯```
-```  
+ 
 ```
 ❯ cd swagger_server
 ❯ ls
 __init__.py  __main__.py  __pycache__  controllers  encoder.py   models       swagger      test         type_util.py util.py
+```
+```
 ❯ cd controllers
 ❯ ls
 __init__.py                 __pycache__                 authorization_controller.py default_controller.py       path_controller.py
