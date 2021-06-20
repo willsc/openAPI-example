@@ -113,12 +113,13 @@ paths:
 components:
   schemas: {}
 
-
+```
+```
   Ensure you load the required modules for the swagger server.
   pip3 install -r requirements.txt
+```
 
-
-
+```
 ❯ pip3 install -r requirements.txt
 Collecting connexion==2.6.0
   Downloading connexion-2.6.0-py2.py3-none-any.whl (76 kB)
@@ -136,14 +137,14 @@ Requirement already satisfied: PyYAML>=5.1 in /Users/cwills/Library/Python/3.9/l
 Collecting openapi-spec-validator>=0.2.4
 
 Also ensure you run pip3 install 'connexion[swagger-ui] as the GUI will not start.
-
+```
 
 2.  generate the python flask server from the https://editor.swagger.io/ GUI  python-flask-server-generated.zip
    Unzip it and run python3 -m swagger_server from the directory above.
-
+```
 # python3 -m swagger_server
-
-
+```
+```
 The swagger_ui directory could not be found.
     Please install connexion with extra install: pip install connexion[swagger-ui]
     or provide the path to your local installation by passing swagger_path=<your path>
@@ -160,27 +161,30 @@ The swagger_ui directory could not be found.
  * Running on all addresses.
    WARNING: This is a development server. Do not use it in a production deployment.
  * Running on http://192.168.1.211:8080/ (Press CTRL+C to quit)
-
-
+```
+```
 3. Connect to GUI http://192.168.1.211:8080/ui/
-
+```
 
    
 
 The code for the method is here
-
+```
 ❯ ls
 Dockerfile                        bucket-api.yaml                   python-flask-server-generated.zip stoplight-studio-mac.dmg          tox.ini
 README.md                         git_push.sh                       requirements.txt                  swagger_server
 api_tutorial                      python-client-generated.zip       setup.py                          test-requirements.txt
 ❯ vi bucket-api.yaml
-❯
+❯```
+```  
 ❯ cd swagger_server
 ❯ ls
 __init__.py  __main__.py  __pycache__  controllers  encoder.py   models       swagger      test         type_util.py util.py
 ❯ cd controllers
 ❯ ls
 __init__.py                 __pycache__                 authorization_controller.py default_controller.py       path_controller.py
+```
+```  
 ❯ pwd
 /Users/cwills/API-work/bucket-api/openAPI/swagger_server/controllers
 ❯ more path_controller.py
@@ -204,4 +208,4 @@ def get_copy_bucket_path(bucket_path):  # noqa: E501
     return bucket_path
 
 ```
-```
+
