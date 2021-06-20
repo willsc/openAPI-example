@@ -1,0 +1,67 @@
+openapi: 3.0.0
+info:
+  title: bucket-api
+  description: CRUD gcs bucket
+  version: "1.0"
+servers:
+- url: http://localhost:3000
+paths:
+  /copy{bucket_path}:
+    get:
+      tags:
+      - path
+      summary: Copy
+      operationId: get_copy_bucket_path
+      parameters:
+      - name: bucket_path
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      responses:
+        "200":
+          description: OK
+        "201":
+          description: Created
+        "400":
+          description: Bad Request
+      x-openapi-router-controller: swagger_server.controllers.path_controller
+  /Delete{path}:
+    get:
+      tags: []
+      summary: Del
+      operationId: get_delete
+      parameters:
+      - name: path
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      responses:
+        "200":
+          description: OK
+        "201":
+          description: Created
+        "400":
+          description: Bad Request
+      x-openapi-router-controller: swagger_server.controllers.default_controller
+  /list:
+    get:
+      tags: []
+      summary: LIST
+      operationId: get_list
+      responses:
+        "200":
+          description: OK
+        "201":
+          description: Created
+        "400":
+          description: Bad Request
+      x-openapi-router-controller: swagger_server.controllers.default_controller
+components:
+  schemas: {}
+
